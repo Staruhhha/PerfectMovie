@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name = "title">
+        43sp
+    </dimen>
+
+    <dimen name = "title_film">
+        39sp
+    </dimen>
+
+    <dimen name = "overrate">
+        27sp
+    </dimen>
+
+    <dimen name = "other">
+        25sp
+    </dimen>
+
+</resources>

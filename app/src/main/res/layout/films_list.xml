@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id = "@+id/cardView"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgFilm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="7dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="VectorDrawableCompat"
+            />
+        <TextView
+            android:id="@+id/tltFilm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/film_name"
+            style="@style/title_film"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toEndOf="@id/imgFilm"
+            app:layout_constraintTop_toTopOf="parent"
+            android:ems="12"
+            android:lines="2"
+            />
+
+        <TextView
+            android:id="@+id/orgTltFilm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/origin_film_name"
+            style="@style/org_title_film_and_date"
+            app:layout_constraintStart_toEndOf="@id/imgFilm"
+            app:layout_constraintTop_toBottomOf="@id/tltFilm"
+            app:layout_constraintEnd_toStartOf="@id/dtFilm"
+
+            />
+        <TextView
+            android:id="@+id/dtFilm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tltFilm"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/date_release"
+            style="@style/org_title_film_and_date"
+            app:layout_constraintStart_toEndOf="@id/orgTltFilm"
+            app:layout_constraintTop_toBottomOf="@id/tltFilm"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+        <TextView
+            android:id="@+id/rtFilm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgFilm"
+            android:layout_marginBottom="7dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/rate_film"
+            style="@style/rate"/>
+
+        <TextView
+            android:id="@+id/votes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/rtFilm"
+            android:layout_marginBottom="7dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            style="@style/vote_count"
+            android:text="@string/votes"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

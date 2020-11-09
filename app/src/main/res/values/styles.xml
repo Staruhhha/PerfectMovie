@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="title_views">
+        <item name="android:textSize">@dimen/title</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="title_film">
+        <item name="android:textSize">@dimen/title_film</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="org_title_film_and_date">
+        <item name="android:textSize">@dimen/other</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="rate">
+        <item name="android:textSize">@dimen/overrate</item>
+        <item name="android:textColor">#FF9800</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="vote_count">
+        <item name="android:textSize">@dimen/other</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="overview">
+        <item name="android:textSize">@dimen/overrate</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+</resources>

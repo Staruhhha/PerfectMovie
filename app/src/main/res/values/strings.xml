@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PerfectMovie</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_top_title">ТОП РЕЙТИНГ</string>
+    <string name="fragment_release_title">ОЖИДАЕМЫЕ</string>
+    <string name="film_name">Фильмец</string>
+    <string name="origin_film_name">Имя фильма</string>
+    <string name="date_release">26-11-2020</string>
+    <string name="rate_film">9.0</string>
+    <string name="votes">1234</string>
+    <string name="overview">Обзор</string>
+</resources>
